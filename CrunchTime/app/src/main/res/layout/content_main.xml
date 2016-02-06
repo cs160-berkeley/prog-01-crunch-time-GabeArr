@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.gabrielarreola.crunchtime.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="#4f211d"
+    android:contextClickable="false">
+
+    <Button
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:text="Burn My Calories"
+        android:id="@+id/Convert"
+        android:layout_marginBottom="22dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/textView24"
+        android:background="#932606"
+        android:textColor="#ffffff"
+        android:layout_toEndOf="@+id/textView20"
+        android:layout_alignStart="@+id/textView20" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/NumberInput"
+        android:background="#030000"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:layout_alignTop="@+id/Convert"
+        android:layout_alignEnd="@+id/textView13"
+        android:layout_alignBottom="@+id/Convert" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonWalking"
+        android:background="#dc432b"
+        android:padding="@dimen/abc_action_bar_content_inset_material"
+        android:src="@drawable/button_walking"
+        android:layout_alignTop="@+id/imageButtonCycling"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonJogging"
+        android:layout_alignEnd="@+id/Convert"
+        android:layout_alignTop="@+id/imageButtonWalking"
+        android:src="@drawable/button_jogging"
+        android:background="#dc432b"
+        android:padding="@dimen/abc_action_bar_content_inset_material" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonJumpingJacks"
+        android:background="#dc432b"
+        android:src="@drawable/button_jumping_jacks"
+        android:padding="@dimen/abc_action_bar_content_inset_material"
+        android:layout_below="@+id/textView13"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="9dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonLegLift"
+        android:src="@drawable/button_leg_lift"
+        android:background="#dc432b"
+        android:padding="@dimen/abc_action_bar_content_inset_material"
+        android:layout_alignTop="@+id/imageButtonJumpingJacks"
+        android:layout_alignStart="@+id/imageButtonSwimming" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonPushUps"
+        android:layout_alignTop="@+id/imageButtonLegLift"
+        android:layout_alignStart="@+id/imageButtonJogging"
+        android:background="#e0604c"
+        android:src="@drawable/button_push_up"
+        android:padding="@dimen/abc_action_bar_content_inset_material" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonPullUp"
+        android:src="@drawable/button_pull_up"
+        android:background="#e0604c"
+        android:padding="@dimen/abc_action_bar_content_inset_material"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/imageButtonJumpingJacks"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonSquat"
+        android:background="#e0604c"
+        android:src="@drawable/button_squat"
+        android:padding="@dimen/abc_action_bar_content_inset_material"
+        android:layout_alignTop="@+id/imageButtonPullUp"
+        android:layout_alignStart="@+id/imageButtonLegLift"
+        android:clickable="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonSitUp"
+        android:layout_alignTop="@+id/imageButtonSquat"
+        android:layout_alignStart="@+id/imageButtonPushUps"
+        android:src="@drawable/button_sit_up"
+        android:background="#e0604c"
+        android:padding="@dimen/abc_action_bar_content_inset_material" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonPlank"
+        android:background="#dc432b"
+        android:src="@drawable/button_push_up"
+        android:padding="@dimen/abc_action_bar_content_inset_material"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/textView19"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonSwimming"
+        android:src="@drawable/button_swimming"
+        android:background="#dc432b"
+        android:layout_alignBottom="@+id/imageButtonPlank"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/abc_action_bar_content_inset_material" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonStairClimbing"
+        android:background="#dc432b"
+        android:src="@drawable/button_stair_climbing"
+        android:padding="@dimen/abc_action_bar_content_inset_material"
+        android:layout_alignTop="@+id/imageButtonSwimming"
+        android:layout_alignStart="@+id/imageButtonSitUp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonCycling"
+        android:src="@drawable/button_cycling"
+        android:background="#dc432b"
+        android:padding="@dimen/abc_action_bar_content_inset_material"
+        android:layout_marginTop="34dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/imageButtonLegLift" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="walking"
+        android:id="@+id/textView13"
+        android:layout_below="@+id/imageButtonWalking"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="7dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="cycling"
+        android:id="@+id/textView14"
+        android:layout_below="@+id/imageButtonCycling"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="jogging"
+        android:id="@+id/textView15"
+        android:layout_below="@+id/imageButtonJogging"
+        android:layout_alignStart="@+id/imageButtonJogging"
+        android:layout_marginStart="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="jumping jacks"
+        android:id="@+id/textView16"
+        android:layout_below="@+id/imageButtonJumpingJacks"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/imageButtonSquat" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="leg lifts"
+        android:id="@+id/textView17"
+        android:layout_alignTop="@+id/textView16"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="push ups"
+        android:id="@+id/textView18"
+        android:layout_marginEnd="3dp"
+        android:layout_alignTop="@+id/textView17"
+        android:layout_alignEnd="@+id/imageButtonPushUps" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="pull ups"
+        android:id="@+id/textView19"
+        android:layout_below="@+id/imageButtonPullUp"
+        android:layout_alignStart="@+id/textView13" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="squats"
+        android:id="@+id/textView20"
+        android:layout_below="@+id/imageButtonSquat"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="sit ups"
+        android:id="@+id/textView21"
+        android:layout_below="@+id/imageButtonSitUp"
+        android:layout_alignEnd="@+id/textView15" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="planking"
+        android:id="@+id/textView22"
+        android:layout_below="@+id/imageButtonSwimming"
+        android:layout_alignStart="@+id/textView19" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="swimming"
+        android:id="@+id/textView23"
+        android:layout_below="@+id/imageButtonSwimming"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="stair climbing"
+        android:id="@+id/textView24"
+        android:layout_below="@+id/imageButtonStairClimbing"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="minutes"
+        android:id="@+id/textView27"
+        android:layout_alignTop="@+id/NumberInput"
+        android:layout_toEndOf="@+id/imageButtonPlank"
+        android:textColor="#dc432b" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="or reps"
+        android:id="@+id/textView25"
+        android:layout_alignBottom="@+id/NumberInput"
+        android:layout_alignStart="@+id/textView27"
+        android:layout_marginBottom="8dp"
+        android:textColor="#e0604c" /><![CDATA[
+
+
+
+
+
+    "/>
+
+
+
+]]>
+</RelativeLayout>
